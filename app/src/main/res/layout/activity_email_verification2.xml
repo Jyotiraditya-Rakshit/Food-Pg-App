@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginPages.VerificationActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/verification"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:id="@+id/verification" />
+
+    <TextView
+        android:id="@+id/verification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Please check your email for verification"
+        android:layout_below="@id/verification"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/lottie"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        android:id="@+id/lottie_view"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/btn"
+        android:textSize="16sp"
+        app:backgroundTint="@color/primary_green"
+        android:layout_below="@id/lottie_view"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

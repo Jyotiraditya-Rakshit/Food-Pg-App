@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/content">
+
+        <item android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home_btn"
+            android:orderInCategory="1"/>
+
+        <item android:id="@+id/food"
+            android:title="Food"
+            android:icon="@drawable/fastfood_24"
+            android:orderInCategory="2"/>
+
+        <item android:id="@+id/history"
+            android:title="Food History"
+            android:icon="@drawable/room_service_24"
+            android:orderInCategory="3"/>
+
+
+
+    </group>
+
+</menu>

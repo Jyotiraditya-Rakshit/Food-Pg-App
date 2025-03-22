@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/card_view">
+
+        <ImageView
+            android:id="@+id/image_view_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/pepperoni_pizza_beauty_1000x1000" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color  name="navigationBar">#122335</color>
+    <color name="live_From">#FFECB3</color>
+    <color name="primary_green">#76C893</color>
+    <color name="primary_green_dark">#99D98C</color>
+    <color name="background_light_green">#E8F5E9</color>
+    <color name="text_color">#212121</color>
+    <color name="dark_blue_gray">#293042</color>
+    <color name="soft_card_bg">#353c4a</color>
+    <color name="light_beige">#ffe5b6</color>
+    <color name="off_white">#f9fbfa</color>
+    <color name="muted_gray">#3a3f50</color>
+    <color name="white">#ffffff</color>
+
+</resources>

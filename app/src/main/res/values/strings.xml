@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFoodApp</string>
+    <string name="home">Home</string>
+    <string name="food">Food</string>
+    <string name="facilities">Facilities</string>
+    <string name="payment_history">Payments</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

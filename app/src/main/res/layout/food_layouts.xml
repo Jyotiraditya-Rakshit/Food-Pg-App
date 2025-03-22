@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="14dp"
+        android:background="@color/white"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/food_image_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="12dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:visibility="visible"
+                tools:src="@drawable/dall_e_2025_03_04_14_14_41___a_photorealistic_top_down_view_of_a_bowl_of_chicken_curry__with_tender_chicken_pieces_in_a_rich__red_orange_gravy__garnished_with_fresh_coriander__the" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/food_image_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/food_image_layout"
+                tools:text="Gobi Matar"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/food_title"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/food_title"
+                app:layout_constraintTop_toBottomOf="@id/food_title"
+                app:layout_constraintEnd_toStartOf="@id/radio_button"
+                tools:text="Chappati,Gobi Matar,Salad"
+                android:id="@+id/food_description"
+                android:layout_marginTop="3dp"/>
+
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/radio_button"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

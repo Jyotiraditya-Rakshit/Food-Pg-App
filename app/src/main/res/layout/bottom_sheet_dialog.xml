@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/down_arrow"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                android:background="@null"/>
+
+            <TextView
+                android:id="@+id/payments_meal_preferences"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toBottomOf="@id/down_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meal Preferences"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+            <RelativeLayout
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/payments_meal_preferences"
+                app:layout_constraintStart_toStartOf="@id/payments_meal_preferences"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="16dp">
+
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/double_arrow"
+
+                    />
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/i1"
+                    android:text="Diet Type"/>
+
+                <TextView
+                    android:id="@+id/diet_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:text="awd" />
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/double_arrow"
+                    android:layout_below="@id/i1"
+                    />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t1"
+                    android:text="Beverage"
+                    android:layout_toEndOf="@id/i2"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/beverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    tools:text="awd"
+                    android:layout_below="@id/t1"
+                    android:layout_marginTop="6dp"/>
+
+
+
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/double_arrow"
+                    android:layout_below="@id/i2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuisine Preference"
+                    android:layout_below="@id/t2"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@id/i3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/t2"
+                    android:text="North Indian"
+                    android:layout_marginTop="6dp"/>
+            </RelativeLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

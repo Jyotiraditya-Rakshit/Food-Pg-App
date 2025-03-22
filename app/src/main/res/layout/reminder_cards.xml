@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/card_layout"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="350dp"
+        android:layout_height="450dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@drawable/gradient_card_2">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/card_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/output_onlinepngtools__2_"
+                tools:background="@drawable/background_logo"/>
+
+            <TextView
+
+                android:textStyle="bold"
+                android:id="@+id/title_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/card_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Today's Meal"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                android:layout_marginTop="29dp"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"/>
+
+
+            <TextView
+                android:id="@+id/description_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/title_card"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@id/title_card"
+                android:textFontWeight="400"
+                android:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintTop_toBottomOf="@id/title_card"
+                tools:text="Chapati,Rice Sambar and Boiled Egg" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/donebtn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="23dp"
+                android:text="Done"
+                android:textColor="@color/white"
+                app:backgroundTint="#282424"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/description_food"
+                app:layout_constraintStart_toStartOf="@id/description_food"
+                app:layout_constraintTop_toBottomOf="@id/description_food"
+                app:layout_constraintVertical_bias="0.231" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

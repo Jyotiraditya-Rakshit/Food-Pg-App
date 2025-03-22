@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyFoodApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">@color/primary_green_dark</item>
+        <item name="colorAccent">@color/primary_green_dark</item>
+        <item name="colorOnPrimary">@color/primary_green_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarDividerColor">#122335</item>
+
+    </style>
+
+
+    <style name="Theme.MyFoodApp" parent="Base.Theme.MyFoodApp" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/primary_green_dark</item>
+        <item name="android:windowBackground">@color/background_light_green</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+
+    <style name="CustomEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorControlActivated">@color/primary_green</item>  <!-- Cursor color -->
+    </style>
+</resources>
