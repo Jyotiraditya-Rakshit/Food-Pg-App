@@ -12,7 +12,7 @@ Along with meal tracking, the app provides a beautiful UI with smooth navigation
 <p align="center">
   <img src="assets/S3.jpeg" width="280" />
   <img src="assets/S1.jpeg" width="280" />
-  <img src="assets/S2.jpeg" width="280" />
+ 
   
 </p>
 
